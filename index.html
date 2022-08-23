@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="output.css" />
     <meta charset="utf-8">
-    <title>ООО «Балтика Инжиниринг» | ПРОИЗВОДСТВО ТАРЫ И ДЕРЕВЯННОЙ УПАКОВКИ</title>
+    <title>ООО «Балтика Инжиниринг»</title>
 </head>
 
-<body class="flex flex-col w-screen tracking-wider">
-    <main class="overflow-y-auto">
-        <div class="max-w-[1440px] mx-auto ">
+<body class="flex flex-col w-screen tracking-wider min-h-screen">
+    <main class="h-full">
+        <div class="max-w-[1440px] mx-auto h-full flex flex-col">
             <div class="flex flex-col md:flex-row items-center justify-between lg:h-16 lg:px-8">
                 <img src="assets/logo.webp" class="h-full w-auto max-h-20" />
                 <div class="flex flex-row flex-wrap items-center justify-center gap-4 lg:gap-8 p-4">
@@ -30,160 +30,46 @@
             </div>
             <nav
                 class="hidden bg-dark-blue text-white p-2 md:flex flex-col md:flex-row items-center gap-8 justify-center">
-                <a href="#about" class="hover:underline underline-offset-4">О компании</a>
-                <a href="#products" class="hover:underline underline-offset-4">О товарах</a>
-                <a href="#personal" class="hover:underline underline-offset-4">О нас</a>
-                <a href="#contacts" class="hover:underline underline-offset-4">Контакты</a>
             </nav>
-            <section id="about" class="relative">
-                <img src="assets/bg1.webp" class="lg:w-3/4 mx-auto" />
-                <div
-                    class="flex flex-col gap-4 lg:absolute lg:bottom-0 lg:left-1/2 lg:-translate-x-1/2 w-full p-4 bg-[rgba(255,255,255,0.8)] full-shadow">
-                    <h1 class="text-3xl font-bold text-center text-brown drop-shadow-sm	">ПРОИЗВОДСТВО ТАРЫ И ДЕРЕВЯННОЙ
-                        УПАКОВКИ</h1>
-                    <div class="lg:w-3/4 mx-auto flex flex-col lg:flex-row gap-4 items-center p-2">
-                        <div class=" text-dark-blue font-bold text-xl whitespace-nowrap">ООО «Балтика Инжиниринг»</div>
-                        <div class="flex-1 leading-7 lg:border-l-4 border-dark-blue px-2 text-center">
-                            Торгово-производственная
-                            организация,
-                            специализирующаяся на изготовлении различной тары, как для
-                            крупных
-                            заводов и организаций, так и для частных клиентов.
-                        </div>
-                    </div>
-                </div>
+            <section class="flex-1 p-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center w-max h-max mx-auto">
+                <a class="section-button" href="wooden-container.html">
+                    <span>Деревянная тара</span>
+                    <img src="assets/bg1.webp" class="flex-1 object-contain scale-110"/>
+                </a>
+                <a class="section-button disabled" disabled title="Раздел в разработке">
+                    <span>Электрооборудование</span>
+                    <small>Раздел в разработке</small>
+                </a>
+                <a class="section-button disabled" disabled title="Раздел в разработке">
+                    <span>Крепёжные изделия</span>
+                    <small>Раздел в разработке</small>
+                </a>
+                <a class="section-button disabled" disabled title="Раздел в разработке">
+                    <span>Металлопрокат</span>
+                    <small>Раздел в разработке</small>
+                </a>
             </section>
-
-
-
-            <section id="products" class="relative my-2">
-                <img src="assets/bg2.webp" class="lg:w-3/4 mx-auto" />
-                <ul
-                    class="text-center lg:absolute lg:bottom-0 lg:left-1/2 lg:-translate-x-1/2 lg:translate-y-1/2 grid grid-cols-1 md:grid-cols-2 gap-4 px-4 lg:w-3/4 ">
-                    <li
-                        class="flex flex-col gap-4 items-center justify-center full-shadow rounded p-4 bg-brown bg-opacity-[0.9] text-white indent-4">
-                        <i class="fa-solid fa-box text-3xl"></i>
-
-                        <span class="flex-1">Производство
-                            тары из всего ассортимента пиломатериалов: досок, реек, фанеры, ДСП, ДВП, как по ГОСТам, так
-                            и
-                            по
-                            индивидуальным заказам, от 1 шт до большого опта.</span>
-                    </li>
-                    <li
-                        class="flex flex-col gap-4 items-center justify-center full-shadow rounded p-4 bg-brown bg-opacity-[0.9] text-white indent-4">
-                        <i class="fa-solid fa-signature text-3xl"></i>
-                        <span class="flex-1">Нанесение
-                            вашего логотипа на изделия, маркировка, брендирование тары, упаковка в термоусадочную
-                            пленку</span>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="flex flex-col gap-4 py-4 text-center items-center justify-center my-2 mt-8">
-                <div
-                    class="z-50 bg-brown shadow-sm shadow-black w-max rounded-full aspect-square p-4 flex flex-row items-center justify-center">
-                    <i class="fa-solid fa-check-to-slot text-white text-3xl"></i>
-                </div>
-                <span class="p-4">На складе в наличии всегда имеется ряд основных материалов, что
-                    позволяет существенно сократить срок производства.</span>
-            </section>
-
-            <section id="personal" class="relative my-2 mt-8"
-                style="box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);">
-                <div class="flex flex-col gap-4 py-4 text-center justify-center items-center">
-                    <div class="flex flex-col md:flex-row items-center gap-4">
-
-                        <div
-                            class="bg-brown shadow-sm shadow-black w-max rounded-full aspect-square p-4 flex flex-row items-center justify-center">
-                            <i class="fa-solid fa-people-group text-3xl text-white"></i>
-                        </div>
-                        <div class="text-brown font-bold text-3xl uppercase">О нас</div>
-
-                    </div>
-                    <span class="p-4">Молодая, но опытная команда приложит все усилия, для того чтобы Ваш заказ был
-                        выполнен качественно в максимально сжатые сроки</span>
-                </div>
-            </section>
-
-            <section
-                class="overflow-x-auto snap-x snap-mandatory flex flex-row lg:grid lg:grid-cols-3 w-full gap-8 lg:w-3/4 mx-auto p-4">
-                <img src="assets/photo1.webp" loading="lazy"
-                    class="snap-center bg-red-900 aspect-square object-cover shadow-sm shadow-black max-w-[75vw] max-h-[75vh] lg:max-w-full mx-auto" />
-                <img src="assets/photo2.webp" loading="lazy"
-                    class="snap-center bg-red-900 aspect-square object-cover shadow-sm shadow-black max-w-[75vw] max-h-[75vh] lg:max-w-full mx-auto" />
-                <img src="assets/photo3.webp" loading="lazy"
-                    class="snap-center bg-red-900 aspect-square object-cover shadow-sm shadow-black max-w-[75vw] max-h-[75vh] lg:max-w-full mx-auto" />
-
-                <img src="assets/photo7.webp" loading="lazy"
-                    class="snap-center bg-red-900 aspect-square object-cover shadow-sm shadow-black max-w-[75vw] max-h-[75vh] lg:max-w-full mx-auto" />
-                <img src="assets/photo8.webp" loading="lazy"
-                    class="snap-center bg-red-900 aspect-square object-cover shadow-sm shadow-black max-w-[75vw] max-h-[75vh] lg:max-w-full mx-auto" />
-                <img src="assets/photo9.webp" loading="lazy"
-                    class="snap-center bg-red-900 aspect-square object-cover shadow-sm shadow-black max-w-[75vw] max-h-[75vh] lg:max-w-full mx-auto" />
-
-
-                <img src="assets/photo4.webp" loading="lazy"
-                    class=" snap-center bg-red-900 aspect-square object-cover shadow-sm shadow-black max-w-[75vw] max-h-[75vh] lg:max-w-full mx-auto" />
-                <img src="assets/photo5.webp" loading="lazy"
-                    class=" snap-center bg-red-900 aspect-square object-cover shadow-sm shadow-black max-w-[75vw] max-h-[75vh] lg:max-w-full mx-auto" />
-                <img src="assets/photo6.webp" loading="lazy"
-                    class="snap-center bg-red-900 aspect-square object-cover shadow-sm shadow-black max-w-[75vw] max-h-[75vh] lg:max-w-full mx-auto" />
-            </section>
-
-            <section id="contacts" class="relative my-2"
-                style="box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6),0px -5px 5px -5px rgba(34, 60, 80, 0.6);">
-                <div class="w-full flex flex-col gap-4 py-4 justify-center items-center">
-                    <div class="flex flex-col md:flex-row items-center gap-4">
-                        <div
-                            class="bg-brown shadow-sm shadow-black w-max rounded-full aspect-square p-4 flex flex-row items-center justify-center">
-                            <i class="fa-solid fa-id-card-clip text-3xl text-white"></i>
-                        </div>
-                        <div class="text-brown font-bold text-3xl uppercase">Контакты</div>
-                    </div>
-                    <div class="flex flex-col gap-4 items-center">
-                        <div class="flex flex-row gap-x-2 items-center justify-center w-max">
-                            <i class="fa-solid fa-square-phone-flip text-dark-blue"></i>
-                            <a href="tel:+78124071038" class=" whitespace-nowrap flex-1">+7-812-407-10-38</a>
-                        </div>
-                        <div class="flex flex-row gap-x-2 items-center justify-center w-max">
-                            <i class="fa-solid fa-square-envelope text-dark-blue"></i>
-                            <a href="mailto:pack@balt-eng.ru" class=" whitespace-nowrap flex-1">pack@balt-eng.ru</a>
-                        </div>
-                        <div class="flex flex-row gap-x-2 items-center w-full w-max">
-                            <i class="fa-solid fa-location-dot text-dark-blue"></i>
-                            <span>Макулатурный проезд, д.4</span>
-                        </div>
-                        <!-- <div class="flex flex-row gap-x-2 items-center text-center w-full md:w-auto">
-                        <i class="fa-solid fa-fingerprint text-dark-blue"></i>
-                        <span>ИНН: 123123213213 КПП: 1232324234</span>
-                    </div> -->
-                    </div>
-                </div>
-                <img src="assets/bg3.webp" class="lg:w-3/4 mx-auto" />
-
-            </section>
-
-
             <footer
-                class="flex flex-col-reverse md:flex-row-reverse lg:w-3/4 mx-auto items-center justify-between lg:h-16 lg:px-8">
-                <img src="assets/logo.webp" class="h-full w-auto max-h-20" />
-                <div class="flex flex-row flex-wrap items-center justify-center gap-4 lg:gap-8 p-4">
-                    <div class="flex flex-row gap-x-2 items-center text-center justify-center">
-                        <i class="fa-solid fa-square-phone-flip text-dark-blue"></i>
-                        <a href="tel:+78124071038" class=" whitespace-nowrap flex-1">+7-812-407-10-38</a>
-                    </div>
-                    <div class="flex flex-row gap-x-2 items-center text-center justify-center">
-                        <i class="fa-solid fa-square-envelope text-dark-blue"></i>
-                        <a href="mailto:pack@balt-eng.ru" class=" whitespace-nowrap flex-1">pack@balt-eng.ru</a>
-                    </div>
-                    <div class="flex flex-row gap-x-2 items-center text-center justify-center w-full md:w-auto">
-                        <i class="fa-solid fa-location-dot text-dark-blue"></i>
-                        <span>Макулатурный проезд, д.4</span>
-                    </div>
+            class="flex flex-col-reverse md:flex-row-reverse lg:w-3/4 mx-auto items-center justify-between lg:h-16 lg:px-8">
+            <img src="assets/logo.webp" class="h-full w-auto max-h-20" />
+            <div class="flex flex-row flex-wrap items-center justify-center gap-4 lg:gap-8 p-4">
+                <div class="flex flex-row gap-x-2 items-center text-center justify-center">
+                    <i class="fa-solid fa-square-phone-flip text-dark-blue"></i>
+                    <a href="tel:+78124071038" class=" whitespace-nowrap flex-1">+7-812-407-10-38</a>
                 </div>
-            </footer>
+                <div class="flex flex-row gap-x-2 items-center text-center justify-center">
+                    <i class="fa-solid fa-square-envelope text-dark-blue"></i>
+                    <a href="mailto:pack@balt-eng.ru" class=" whitespace-nowrap flex-1">pack@balt-eng.ru</a>
+                </div>
+                <div class="flex flex-row gap-x-2 items-center text-center justify-center w-full md:w-auto">
+                    <i class="fa-solid fa-location-dot text-dark-blue"></i>
+                    <span>Макулатурный проезд, д.4</span>
+                </div>
+            </div>
+        </footer>
         </div>
+
+
     </main>
     <script src="https://kit.fontawesome.com/6fa8b586d4.js" crossorigin="anonymous"></script>
 </body>
